@@ -7,7 +7,8 @@
           <v-col
             cols="12"
             sm="2"
-            lg="3"
+            md="3"
+            xl="4"
           >
             <!-- <v-sheet
               class="bg-grey-lighten-3"
@@ -19,7 +20,8 @@
           <v-col
             cols="12"
             sm="8"
-            lg="7"
+            md="8"
+            xl=""
           >
             <router-view></router-view>
           </v-col>
@@ -27,7 +29,7 @@
           <v-col
             cols="12"
             sm="2"
-            lg="3"
+            lg="4"
           >
             <!-- <v-sheet
               class="bg-grey-lighten-3"

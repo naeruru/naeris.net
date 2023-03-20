@@ -6,7 +6,7 @@
         border
         density="compact"
         >
-        <v-btn v-for="social in socials" disabled class="mx-2"></v-btn>
+        <v-btn v-for="social in socials" disabled class="d-none d-sm-block mx-1"></v-btn>
 
         <v-spacer></v-spacer>
 
@@ -26,9 +26,12 @@
         </v-tabs>
         <v-spacer></v-spacer>
 
-        <v-btn v-for="social in socials" :icon="social.icon" class="mx-2" @click="open_url(social.url)"></v-btn>
+        <v-btn v-for="social in socials" :icon="social.icon" class="d-none d-sm-block mx-1" @click="open_url(social.url)"></v-btn>
     </v-app-bar>
-    <v-divider></v-divider>
+    <v-footer class="d-sm-none d-md-none" dense app>
+        <v-spacer></v-spacer>
+        <v-btn v-for="social in socials" :icon="social.icon" class="mx-1" @click="open_url(social.url)" flat></v-btn>
+    </v-footer>
 </template>
 
 <script lang="ts">

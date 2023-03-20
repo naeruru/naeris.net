@@ -15,7 +15,7 @@
         If you're interested in some public projects I've worked on, check out
         <a @click="$router.push({name :'work'})" class="text-primary pointer">my work</a>
         page. Conversely, you can check out my
-        <a @click="$router.push({name :'cat'})" class="text-primary pointer">my cat </a>
+        <a @click="$router.push({name :'cat'})" class="text-primary pointer">my cat</a>
         too.
       </p>
       <v-divider class="mx-10 my-6"></v-divider>
@@ -47,7 +47,7 @@
                 text: `I'm really into VR. I've been trying to learn Blender and shader dev (and make practical devices in VRChat!).`,
             },
             {
-                text: `I love to draw!`,
+                text: `I love to draw! I hope to bring my OC to life in VR one day.`,
             }
         ],
     })
