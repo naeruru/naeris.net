@@ -48,6 +48,9 @@
             },
             {
                 text: `I love to draw! I hope to bring my OC to life in VR one day.`,
+            },
+            {
+                text: `I cosplay. My favorite so far was <a class="text-pink-accent-1">Yae Miko</a>!`,
             }
         ],
     })

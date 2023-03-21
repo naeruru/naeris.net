@@ -21,7 +21,7 @@
             cols="12"
             sm="8"
             md="8"
-            xl=""
+            xl="4"
           >
             <router-view></router-view>
           </v-col>
@@ -30,6 +30,7 @@
             cols="12"
             sm="2"
             lg="4"
+            xl="4"
           >
             <!-- <v-sheet
               class="bg-grey-lighten-3"
