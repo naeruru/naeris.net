@@ -85,7 +85,7 @@
             {
               title: `Functional VR watch`,
               description: `A watch that has a couple practical features! It shows the battery percentage of controllers/trackers, and even shows the song your playing on spotify. 
-                            I wrote some features into the custom display shader like showing normalizated integer values derived from [0,1] float range values. Super useful for percentages.
+                            I wrote some features into the custom display shader like showing normalizated integer values derived from [0,1] float values. Super useful for percentages.
                             Due to the screen space of a VR watch, a lot of design work went into figuring out how to display it all. I will release it for free when I finish~`,
               image: ``,
             },
