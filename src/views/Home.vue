@@ -6,7 +6,7 @@
   >
     <v-card-title class="text-h3 my-4">naeris dayo!</v-card-title>
     <v-card-text class="text-subtitle-1 py-2">
-      <p class="mb-2">Hihi, I'm <a class="text-secondary">naeris</a>! (or nene)</p>
+      <p class="mb-2">Hihi, I'm <a class="text-secondary">naeris</a>! (or <a class="text-secondary">nae</a>)</p>
       <p class="mb-2">
         I'm a software engineer who specializes in front-end development (I design applications and frameworks to power them).
         I also do research in high performance computing and refractive errors in vision.
