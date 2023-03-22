@@ -64,7 +64,7 @@
               title: `Starboard`,
               image: `https://user-images.githubusercontent.com/9059594/190692147-599a69cf-62ac-446b-aa9c-ceb6e07d4721.png`,
               description: `A Discord bot for highlighting messages that reach a react threshold. <i>Eh? That's it?</i> . . . (ĭ﹏ĭ ;) kinda! Its standout features are that
-                            it is super simple to set up (it requires no databases), and is designed for high volume servers. Its pretty popular. I also created a REST API for it 
+                            it is super simple to set up (it requires no databases), and is designed for high volume servers. It's pretty popular. I also created a REST API for it 
                             for displaying all sorts of data. Please 
                             <a href="https://github.com/naexris/starboard-stats#examples" target="_blank">check out my examples<a> of it!`,
               links: [
@@ -85,7 +85,7 @@
             {
               title: `Functional VR watch`,
               description: `A watch that has a couple practical features! It shows the battery percentage of controllers/trackers, and even shows the song you are playing on spotify. 
-                            I wrote some features into the custom display shader like showing normalizated integer values derived from [0,1] float values. Super useful for percentages.
+                            I wrote some features into the custom display shader like showing normalized integer values derived from [0,1] float values. Super useful for percentages.
                             Due to the screen space of a VR watch, a lot of design work went into figuring out how to display it all (like variable scrolling text). I will release it for free when I finish~`,
               image: ``,
             },
