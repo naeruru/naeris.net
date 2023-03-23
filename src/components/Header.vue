@@ -29,8 +29,9 @@
         <v-btn v-for="social in socials" :icon="social.icon" class="d-none d-sm-block mx-1" @click="open_url(social.url)"></v-btn>
     </v-app-bar>
     <v-footer class="d-sm-none d-md-none" dense app>
+        <strong>naeris.net</strong>
         <v-spacer></v-spacer>
-        <v-btn v-for="social in socials" :icon="social.icon" class="mx-1" @click="open_url(social.url)" flat></v-btn>
+        <v-btn v-for="social in socials" :icon="social.icon" class="mx-1" @click="open_url(social.url)" size="small" flat></v-btn>
     </v-footer>
 </template>
 
