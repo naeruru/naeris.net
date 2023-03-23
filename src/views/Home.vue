@@ -1,6 +1,5 @@
 <template>
   <v-card
-    min-height="70vh"
     flat
     color="transparent"
   >

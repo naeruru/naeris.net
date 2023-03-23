@@ -1,5 +1,5 @@
 <template>
-  <v-card min-height="70vh" flat color="transparent">
+  <v-card flat color="transparent">
     <v-card-text>
       <p>I have done a lot of various programming related things in my personal time! Please check out a few of it below~
       </p>

@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <router-view name="Header"></router-view>
     <v-main>
-      <v-container class="d-flex align-center justify-center">
+      <v-container>
         <v-row class="d-flex align-center justify-center">
           <v-col
             cols="12"
