@@ -40,11 +40,13 @@
 import cbt_lazy from '@/assets/work/chatboxtools-lazy.png';
 
 import starboard from '@/assets/work/starboard.png';
+import starboard＿lazy from '@/assets/work/starboard-lazy.png';
 
 import vr_watch from '@/assets/work/vr_watch.gif';
 import vr_watch_lazy from '@/assets/work/vr_watch-lazy.png';
 
 import watchpls from '@/assets/work/watchpls.png';
+import watchpls_lazy from '@/assets/work/watchpls-lazy.png';
 
 export default {
   setup() {
@@ -81,7 +83,7 @@ export default {
       {
         title: `Starboard`,
         image: starboard,
-        lazy_image: ``,
+        lazy_image: starboard＿lazy,
         description: `A Discord bot for highlighting messages that reach a react threshold. <i>Eh? That's it?</i><br> . . . (ĭ﹏ĭ ;) kinda! Its standout features are that
                             it is super simple to set up (it requires no databases), and is designed for high volume servers. It's pretty popular. I also created a REST API for it 
                             for displaying all sorts of data. Please 
@@ -120,7 +122,7 @@ export default {
                             and <a href="https://github.com/watchpls-me/website" target="_blank">website</a>. Eventually Discord caught up, so I abandoned work on it . . . but I learned a lot of fun stuff about
                             WebRTC protocols and functional websocket powered chat channels.`,
         image: watchpls,
-        lazy_image: ``,
+        lazy_image: watchpls_lazy,
       },
       {
         title: `YouTube Stream Clipping Extension`,
