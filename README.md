@@ -1,44 +1,12 @@
-# default
+# naeris.net
+Just my minimalistic website. Written in Vue. [naeris.net](https://naeris.net/)!
 
 ## Project setup
 
+```bash
+npm install # install dependencies
+npm run dev # run in development
+
+
+npm run build # build for production
 ```
-# yarn
-yarn
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-```
-
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).

@@ -65,8 +65,9 @@ export default {
       },
       {
         title: `Chatbox Tools`,
-        description: `A speech-to-text tool that can display text onto a customizable window to display on applications like OBS. It also supports relaying text 
-                            and commands to other applications like VRChat.`,
+        description: `A speech-to-text tool that can display text in a customizable window for applications like OBS. Also supports relaying text 
+                            and commands to other applications like VRChat. Uses Web Speech API to make it entirely free while still using 
+                            robust networks like GCP or Azure backend.`,
         image: `https://user-images.githubusercontent.com/9059594/226288753-1232f6e4-08db-4dd7-a28f-f5506b9f7668.gif`,
         lazy_image: cbt_lazy,
         links: [

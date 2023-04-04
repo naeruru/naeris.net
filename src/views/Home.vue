@@ -3,7 +3,7 @@
     flat
     color="transparent"
   >
-    <v-card-title class="text-h3 my-4">naeris dayo!</v-card-title>
+    <v-card-title class="text-h3 py-6">naeris dayo!</v-card-title>
     <v-card-text class="text-subtitle-1 py-2">
       <p class="mb-2">
         Hihi, I'm 
