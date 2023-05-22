@@ -64,7 +64,7 @@ export default {
         title: `Open source work`
       },
       {
-        title: `Chatbox Tools`,
+        title: `mimiuchi`,
         description: `A speech-to-text tool that can display text in a customizable window for applications like OBS. Also supports relaying text 
                             and commands to other applications like VRChat. Uses Web Speech API to make it entirely free while still using 
                             robust networks like GCP or Azure backend.`,
@@ -72,11 +72,11 @@ export default {
         lazy_image: cbt_lazy,
         links: [
           {
-            url: `https://captions.naeris.net/`,
+            url: `https://mimiuchi.naeris.net/`,
             icon: `mdi-web`
           },
           {
-            url: `https://github.com/naexris/chatbox-tools`,
+            url: `https://github.com/naexris/mimiuchi`,
             icon: `mdi-code-braces`
           }
         ],
