@@ -59,11 +59,11 @@ export default {
         socials: [
             {
                 icon: 'mdi-twitter',
-                url: 'https://twitter.com/naexris'
+                url: 'https://twitter.com/naeruruu'
             },
             {
                 icon: 'mdi-github',
-                url: 'https://github.com/naexris'
+                url: 'https://github.com/naeruru'
             }
         ]
     }),

@@ -76,7 +76,7 @@ export default {
             icon: `mdi-web`
           },
           {
-            url: `https://github.com/naexris/mimiuchi`,
+            url: `https://github.com/naeruru/mimiuchi`,
             icon: `mdi-code-braces`
           }
         ],
@@ -88,17 +88,17 @@ export default {
         description: `A Discord bot for highlighting messages that reach a react threshold. <i>Eh? That's it?</i><br> . . . (ĭ﹏ĭ ;) kinda! Its standout features are that
                             it is super simple to set up (it requires no databases), and is designed for high volume servers. It's pretty popular. I also created a REST API for it 
                             for displaying all sorts of data. Please 
-                            <a href="https://github.com/naexris/starboard-stats#examples" target="_blank">check out my examples</a> of it!`,
+                            <a href="https://github.com/naeruru/starboard-stats#examples" target="_blank">check out my examples</a> of it!`,
         links: [
           {
-            url: `https://github.com/naexris/starboard`,
+            url: `https://github.com/naeruru/starboard`,
             icon: `mdi-code-braces`
           }
         ]
       },
       {
         type: `extra`,
-        title: `. . .and much much more on my <a href="https://github.com/naexris" target="_blank">github</a> like parallel algorithm visualizations!`
+        title: `. . .and much much more on my <a href="https://github.com/naeruru" target="_blank">github</a> like parallel algorithm visualizations!`
       },
       {
         type: `title`,
@@ -129,7 +129,7 @@ export default {
         title: `YouTube Stream Clipping Extension`,
         description: `At one point, YouTube didn't have the ability to do stream clips. their "low latency" broadcast mode also didn't let users rewind a broadcast. So . . . I made a super simple 
                             clipping extension. All you had to do was click a button while watching the stream and it would download a video of the last <i>x</i> seconds. The repository is private, but you
-                            can <a href="https://github.com/naexris/clip-pls" target="_blank">click this</a> to pretend you saw it (^・ω・^)`,
+                            can <a href="https://github.com/naeruru/clip-pls" target="_blank">click this</a> to pretend you saw it (^・ω・^)`,
         image: ``,
         lazy_image: ``,
       },
