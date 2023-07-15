@@ -3,27 +3,19 @@
     flat
     color="transparent"
   >
-    <v-card-title class="text-h3 py-6">naeris dayo!</v-card-title>
+    <v-card-title class="text-h3 py-6">nae dayo!</v-card-title>
     <v-card-text class="text-subtitle-1 py-2">
       <p class="mb-2">
         Hihi, I'm 
         <a class="text-secondary">
           <ruby>
-            nae<rt>ネー</rt>
-            ri<rt>リ</rt>
-            s<rt>ス</rt>
-          </ruby>
-        </a>!
-        (or 
-        <a class="text-secondary">
-          <ruby>
             nae<rt>ネイ</rt>
           </ruby>
-        </a>)
+        </a>!
       </p>
       <p class="mb-2">
-        I'm a software engineer who specializes in front-end development (I design applications and frameworks to power them).
-        I also do research in high performance computing and refractive errors in vision.
+        I'm a software engineer who specializes in front-end development and design.
+        I also do research in stuff like high performance computing and vision.
       </p>
       <p class="mb-2">
         If you're interested in some public projects I've worked on, check out
@@ -64,7 +56,7 @@
                 text: `I love to draw! I hope to bring my OC to life in VR one day.`,
             },
             {
-                text: `I cosplay. My favorite so far was <a class="text-pink-accent-1">Yae Miko</a>!`,
+                text: `I cosplay. My favorite so far was <a class="text-cyan-lighten-1">Shirakami Fubuki (FubukiTEK)</a>!`,
             }
         ],
     })
