@@ -1,8 +1,8 @@
 <template>
   <v-card flat color="transparent">
     <v-card-text>
-      <p>I have done a lot of various projects in my personal time! Please check out a few of it
-        below~
+      <p>
+        I have done a lot of various projects in my personal time! Please check out a few of it below~
       </p>
     </v-card-text>
     <div v-for="project, i in projects">

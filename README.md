@@ -1,5 +1,5 @@
-# naeris.net
-Just my minimalistic website. Written in Vue. [naeris.net](https://naeris.net/)!
+# naeruru.com
+Just my minimalistic website. Written in Vue. [naeruru.com](https://naeruru.com/)!
 
 ## Project setup
 
