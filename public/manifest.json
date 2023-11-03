@@ -1,0 +1,16 @@
+{
+  "name": "naeruru",
+  "short_name": "naeruru",
+  "icons": [
+    {
+      "src": "logo-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#a88fff",
+  "display": "standalone",
+  "theme_color": "#a88fff",
+  "description": "nae's personal website"
+}
