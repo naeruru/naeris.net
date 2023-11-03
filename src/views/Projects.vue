@@ -1,11 +1,13 @@
 <template>
   <v-card flat color="transparent">
     <v-card-text>
-      <p>I have done a lot of various programming related things in my personal time! Please check out a few of it below~
+      <p>I have done a lot of various projects in my personal time! Please check out a few of it
+        below~
       </p>
     </v-card-text>
     <div v-for="project, i in projects">
-      <v-card-title v-if="project.type === 'title'" class="text-h4 my-4 text-secondary">{{ project.title }}</v-card-title>
+      <v-card-title v-if="project.type === 'title'" class="text-h4 my-4 text-secondary">{{ project.title
+      }}</v-card-title>
       <v-card-text v-else-if="project.type === 'extra'" class="mb-12">
         <p v-html="project.title"></p>
       </v-card-text>
@@ -23,8 +25,8 @@
               <v-card-text v-html="project.description" class="text-subtitle-1">
               </v-card-text>
               <v-card-actions class="justify-end">
-                <v-btn v-for="link in project.links" :icon="link.icon" class="mx-1" color="primary"
-                  @click="open_url(link.url)" flat></v-btn>
+                <v-btn v-for="link in project.links" :icon="link.icon" class="mx-1" color="primary" flat
+                  @click="open_url(link.url)" @click.middle="open_url(link.url)"></v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -48,13 +50,17 @@ import vr_watch_lazy from '@/assets/work/vr_watch-lazy.png';
 import watchpls from '@/assets/work/watchpls.png';
 import watchpls_lazy from '@/assets/work/watchpls-lazy.png';
 
+import open_url from '../helpers/open_url'
+
 export default {
   setup() {
     return {
       cbt_lazy,
       vr_watch,
       vr_watch_lazy,
-      watchpls
+      watchpls,
+
+      open_url,
     }
   },
   data: () => ({
@@ -66,13 +72,12 @@ export default {
       {
         title: `mimiuchi`,
         description: `A speech-to-text tool that can display text in a customizable window for applications like OBS. Also supports relaying text 
-                            and commands to other applications like VRChat. Uses Web Speech API to make it entirely free while still using 
-                            robust networks like GCP or Azure backend.`,
-        image: `https://user-images.githubusercontent.com/9059594/226288753-1232f6e4-08db-4dd7-a28f-f5506b9f7668.gif`,
+                            and commands to other applications like VRChat. Has a lot of random features like local translations. Check it out!`,
+        image: `https://user-images.githubusercontent.com/9059594/276826037-666900a9-d176-4c39-a5dd-6a320a46cd8c.gif`,
         lazy_image: cbt_lazy,
         links: [
           {
-            url: `https://mimiuchi.naeris.net/`,
+            url: `https://mimiuchi.com/`,
             icon: `mdi-web`
           },
           {
@@ -134,12 +139,7 @@ export default {
         lazy_image: ``,
       },
     ],
-  }),
-  methods: {
-    open_url(url: string) {
-      window.open(url, '_blank')
-    }
-  },
+  })
 }
 </script>
 

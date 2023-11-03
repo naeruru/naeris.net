@@ -3,8 +3,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Header from '@/components/Header.vue'
 
-import Home from '@/views/Home.vue'
-
 const routes = [
   {
     path: '/',
@@ -22,7 +20,7 @@ const routes = [
         path: '/work',
         name: 'work',
         components: {
-          default: () => import(/* webpackChunkName: "home" */ '@/views/Work.vue'),
+          default: () => import(/* webpackChunkName: "home" */ '@/views/Projects.vue'),
           Header,
         }
       },
