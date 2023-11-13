@@ -21,12 +21,11 @@
         </a>.
       </p>
       <p class="mb-2">
-        I'm a software engineer who specializes in front-end development and design.
-        I also do research in stuff like high performance computing and vision. Most 
-        of the time I'm just working on things I'm randomly passionate about!
+        I'm a software dev and designer who specializes in front-end development and design. 
+        Most of the time I'm just working on things I'm randomly passionate about!
       </p>
       <p class="mb-2">
-        If you're interested in some public projects I've worked on, check out
+        If you're interested in some stuff I've worked on, check out
         <a @click="$router.push({ name: 'work' })" class="text-primary pointer">my projects</a>
         page. Conversely, you can check out my
         <a @click="$router.push({ name: 'cat' })" class="text-primary pointer">my cat</a>
