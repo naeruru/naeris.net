@@ -59,6 +59,8 @@
 </template>
 
 <script lang="ts">
+import boothpm from '@/assets/icons/boothpm.png';
+
 import open_url from '@/helpers/open_url';
 
 export default {
@@ -72,10 +74,10 @@ export default {
         text: `I speak Japanese (N3) and English. Please talk to me in either!`,
       },
       {
-        text: `I'm really into VR. I make all sorts of things like custom shaders and face tracking animators.`,
+        text: `I'm really into VR. I do all sorts of things like mocap, custom shaders, and face tracking animators.`,
       },
       {
-        text: `I cosplay. My favorite so far was <a class="text-cyan-lighten-1">Shirakami Fubuki (FubukiTEK)</a>!`,
+        text: `I cosplay. My favorite so far was <a class="text-cyan-lighten-1">Shirakami Fubuki (FubukiTEK)</a>.`,
       }
     ],
     buttons: [
@@ -90,8 +92,8 @@ export default {
         'url': 'https://github.com/naeruru'
       },
       {
-        title: 'Booth',
-        icon: 'mdi-link-variant',
+        title: 'Booth.pm',
+        icon: 'custom:booth_pm',
         'url': 'https://naeruru.booth.pm'
       },
       {
