@@ -31,18 +31,8 @@
         <a @click="$router.push({ name: 'cat' })" class="text-primary pointer">my cat</a>
         too.
       </p>
-      <v-divider class="mx-10 my-6"></v-divider>
 
-      <v-row class="justify-center mb-4">
-        <v-col v-for="button in buttons" :cols=12 :xs="12" :sm="10">
-          <v-btn variant="outlined" :prepend-icon="button.icon" block @click="open_url(button.url)"
-            @click.middle="open_url(button.url)">
-            {{ button.title }}
-          </v-btn>
-        </v-col>
-      </v-row>
-
-      <p class="mb-2">
+      <p class="mb-4">
 
       </p>
       <details>
@@ -53,6 +43,20 @@
           </li>
         </ul>
       </details>
+
+      <v-divider class="mx-10 my-6"></v-divider>
+
+      <v-row class="justify-center mb-4">
+        <v-col v-for="button in buttons" :cols=12 :xs="12" :sm="10">
+          <v-btn variant="outlined" block @click="open_url(button.url)"
+            @click.middle="open_url(button.url)">
+            <template v-slot:prepend>
+              <v-icon color="secondary">{{ button.icon }}</v-icon>
+            </template>
+            {{ button.title }}
+          </v-btn>
+        </v-col>
+      </v-row>
 
     </v-card-text>
   </v-card>
@@ -97,8 +101,13 @@ export default {
         'url': 'https://naeruru.booth.pm'
       },
       {
+        title: 'Ko-fi',
+        icon: 'mdi-coffee-outline',
+        'url': 'https://ko-fi.com/naeruru'
+      },
+      {
         title: 'Bluesky',
-        icon: 'mdi-link-variant',
+        icon: 'custom:bluesky',
         'url': 'https://bsky.app/profile/naeruru.com'
       },
     ]

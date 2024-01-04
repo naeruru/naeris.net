@@ -14,8 +14,10 @@ import { IconSet, IconProps, createVuetify } from 'vuetify'
 
 // icons
 import booth_pm from "@/assets/icons/booth_pm.vue"
+import bluesky from "@/assets/icons/bluesky.vue"
 const customSvgNameToComponent: any = {
   booth_pm,
+  bluesky,
 }
 const custom: IconSet = {
   component: (props: IconProps) =>

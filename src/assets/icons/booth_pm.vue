@@ -1,7 +1,7 @@
 <template>
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" width="100%" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
-        <path fill="#FFFFFF" opacity="1.000000" stroke="none" d="
+        <path opacity="1.000000" stroke="none" d="
 M272.867371,44.989700 
 	C291.672913,75.107056 310.365234,104.852356 328.792664,134.760849 
 	C330.663177,137.796829 332.229736,142.009338 331.729034,145.344315 
