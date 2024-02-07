@@ -54,6 +54,7 @@
               <v-icon color="secondary">{{ button.icon }}</v-icon>
             </template>
             {{ button.title }}
+            <p v-if="button.desc" class="text-caption text-medium-emphasis text-primary"> ー {{ button.desc }}</p>
           </v-btn>
         </v-col>
       </v-row>
@@ -63,8 +64,6 @@
 </template>
 
 <script lang="ts">
-import boothpm from '@/assets/icons/boothpm.png';
-
 import open_url from '@/helpers/open_url';
 
 export default {
@@ -78,7 +77,7 @@ export default {
         text: `I speak Japanese (N3) and English. Please talk to me in either!`,
       },
       {
-        text: `I'm really into VR. I do all sorts of things like mocap, custom shaders, and face tracking animators.`,
+        text: `I'm really into VR. I do all sorts of things like mocap, animations, custom shaders, and face tracking rigging.`,
       },
       {
         text: `I cosplay. My favorite so far was <a class="text-cyan-lighten-1">Shirakami Fubuki (FubukiTEK)</a>.`,
@@ -87,26 +86,31 @@ export default {
     buttons: [
       {
         title: 'Twitter',
+        desc: '',
         icon: 'mdi-twitter',
         'url': 'https://twitter.com/naeruruu'
       },
       {
         title: 'GitHub',
+        desc: '',
         icon: 'mdi-github',
         'url': 'https://github.com/naeruru'
       },
       {
         title: 'Booth.pm',
+        desc: 'shop',
         icon: 'custom:booth_pm',
         'url': 'https://naeruru.booth.pm'
       },
       {
         title: 'Ko-fi',
+        desc: 'shop & commissions',
         icon: 'mdi-coffee-outline',
         'url': 'https://ko-fi.com/naeruru'
       },
       {
         title: 'Bluesky',
+        desc: '',
         icon: 'custom:bluesky',
         'url': 'https://bsky.app/profile/naeruru.com'
       },
