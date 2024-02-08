@@ -2,7 +2,7 @@
   <v-card flat color="transparent">
     <v-card-text>
       <p>
-        I work on a lot of different things these days! I'm passionate about a lot stuff and love showing off new things I discover and learn. Please check out a few of it below~
+        I do a lot of various projects in my personal time! Please check out a few of it below~
       </p>
     </v-card-text>
 
@@ -78,7 +78,8 @@
     </div> -->
 
     <div v-for="section, i in sections">
-      <v-card-title class="text-h4 my-4 text-secondary pl-3">
+      <v-card-title class="text-h4 my-4 text-secondary pl-0 pb-1 text-wrap">
+        <v-icon size="x-small" class="pb-1" color="white">mdi-creation</v-icon>
         {{ section.title }}
       </v-card-title>
       <v-card-text v-for="item, i in section.items" :id="item.id" class="px-0 my-2">
@@ -105,37 +106,6 @@
         <v-divider class="mb-6"></v-divider>
       </v-card-text>
     </div>
-
-    <!-- <div v-for="project, i in projects" :id="project.id">
-      <v-card-title v-if="project.type === 'title'" class="text-h4 my-4 text-secondary">{{ project.title
-      }}</v-card-title>
-      <v-card-text v-else-if="project.type === 'extra'" class="mb-12">
-        <p v-html="project.title"></p>
-      </v-card-text>
-      <v-card-text v-else class="text-subtitle-1 my-4">
-        <v-divider class="mb-6"></v-divider>
-        <v-row>
-          <v-col class="pt-6" v-if="project.image" :cols="12" :md="12" :lg="6">
-            <v-img :lazy-src="project.lazy_image" :src="project.image"></v-img>
-          </v-col>
-          <v-col :cols="12" :md="12" :lg="(project.image) ? 6 : 12">
-            <v-card color="transparent" flat>
-              <v-card-title class="text-h5">
-                {{ project.title }}
-              </v-card-title>
-              <v-card-text v-html="project.description" class="text-subtitle-1">
-              </v-card-text>
-              <v-card-actions class="justify-end">
-                <v-btn v-for="link in project.links" :icon="link.icon" class="mx-1" color="primary" flat
-                  @click="open_url(link.url)" @click.middle="open_url(link.url)"></v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-
-
-      </v-card-text>
-    </div> -->
 
   </v-card>
 </template>
@@ -212,6 +182,17 @@ export default {
                 icon: `mdi-coffee-outline`,
               }
             ],
+          },
+          {
+            title: `Vket Booths`,
+            id: `vket`,
+            type: `project`,
+            description: `With the help of friends, I make creative <a href="https://event.vket.com/en" target="_blank">Vket</a> (Virtual Market) booths that break the mold of a traditional booth showing. 
+            So far, I've worked on booths for <a href="https://vrchat.com/home/world/wrld_ec86c5f6-90b6-40d8-928a-d405809c3421" target="_blank">Vket Summer 2023</a> (under Kute Mute), 
+            and <a href="https://vrchat.com/home/world/wrld_046de0c3-a82a-4ed7-9ba9-4e00444aadf8" target="_blank">Vket Winter 2023</a> (under mayoartworks). 
+            They're built with the mindset of drawing you in and giving unique presentations in the virtual world. They're worth a look!`,
+            // image: facetracking,
+            // lazy_image: facetracking_lazy,
           },
         ] as Item[]
       },
