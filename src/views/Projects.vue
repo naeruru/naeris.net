@@ -196,7 +196,7 @@ export default {
             description: `A Discord bot for highlighting messages that reach a react threshold. <i>Eh? That's it?</i><br> . . . (ĭ﹏ĭ ;) kinda! Its standout features are that
                                 it is super simple to set up (it requires no databases), and is designed for high volume servers. It's pretty popular. I also created a REST API for it 
                                 for displaying all sorts of data. Please 
-                                <a href="https://github.com/naeruru/starboard-stats#examples" target="_blank">check out my examples</a> of it!`,
+                                <a href="https://github.com/naeruru/starboard-stats#examples" target="_blank">check out my data output examples</a> from it!`,
             links: [
               {
                 title: 'Github',
@@ -235,9 +235,9 @@ export default {
             title: `Vket Booths`,
             id: `vket`,
             type: `project`,
-            description: `With the help of friends, I make creative <a href="https://event.vket.com/en" target="_blank">Vket</a> (Virtual Market) booths that break the mold of a traditional booth showing. 
+            description: `With the help of friends, I make creative <a href="https://event.vket.com/en" target="_blank">Vket</a> (Virtual Market) booths that break the mold of a traditional virtual marketable booths. 
             So far, I've worked on booths for <a href="https://vrchat.com/home/world/wrld_ec86c5f6-90b6-40d8-928a-d405809c3421" target="_blank">Vket Summer 2023</a> (under Kute Mute), 
-            and <a href="https://vrchat.com/home/world/wrld_046de0c3-a82a-4ed7-9ba9-4e00444aadf8" target="_blank">Vket Winter 2023</a> (under mayoartworks). 
+            and <a href="https://vrchat.com/home/world/wrld_046de0c3-a82a-4ed7-9ba9-4e00444aadf8" target="_blank">Vket Winter 2023</a> (under mayoartworks).
             They're built with the mindset of drawing you in and giving unique presentations in the virtual world. They're worth a look!`,
             // image: facetracking,
             // lazy_image: facetracking_lazy,
