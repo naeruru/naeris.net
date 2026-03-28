@@ -57,16 +57,11 @@
   const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000) // (FOV, ASPECT RATIO, near clipping plane, far clipping plane)
   const renderer = new THREE.WebGLRenderer({ alpha: true })
 
-
+  // set renderer
   renderer.setSize(innerWidth - marginX, innerHeight - marginY)
   renderer.setPixelRatio(devicePixelRatio)
-  // document.body.appendChild(renderer.domElement)
 
-  // const boxGeometry = new THREE.BoxGeometry(1, 1, 1)
-  // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
-  // const mesh = new THREE.Mesh(boxGeometry, material)
-  // scene.add(mesh)
-
+  // set controls + camera pos
   const controls = new OrbitControls(camera, renderer.domElement)
   controls.enableDamping = true;
   controls.dampingFactor = .025
@@ -86,10 +81,8 @@
 
   const frontMat = new THREE.MeshPhongMaterial({ ...basicMatProps, map: texture })
   const backMat = new THREE.MeshPhongMaterial({ ...basicMatProps, map: textureBack, })
-  const sideMat = new THREE.MeshPhongMaterial({ ...basicMatProps, })
 
-  // create plane
-  // const planeGeometry = new THREE.PlaneGeometry(2, 4, 10, 10)
+  // create double-sided plane
   var cardMesh = new THREE.Mesh(
     RectangleRounded(
       world.plane.width * world.plane.size,
@@ -109,53 +102,38 @@
     ), backMat,
   ).rotateY(Math.PI)
 
-
-
-  // const material2 = new THREE.MeshPhongMaterial({
-  //   ...basicMatProps,
-  //   color: 0xff0000,
-  // })
-  // const planeMesh = new THREE.Mesh(planeGeometry, material2)
+  // add to scene
   scene.add(cardMesh)
   scene.add(cardMeshBack)
 
-  // console.log(cardMesh.geometry.attributes.position.array)
-
   // create light
   const light = new THREE.DirectionalLight(0xFFFFFF, 2.5) // color, intensity
-  // light.position.set(0, 0, 2)
-  light.position.copy(camera.position)
+  light.position.copy(camera.position) // make light come from "screen"
   scene.add(light)
-
-  // generate plane variables
-  // genPlane()
 
   function animate () {
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
-    // renderer.setSize(innerWidth - marginX, innerHeight - marginY)
-    // mesh.rotation.x += .01
-    // mesh.rotation.y += .01
     cardMesh.rotation.y += 0.0005
     cardMeshBack.rotation.y -= 0.0005
-    // light.position.copy(new THREE.Vector3(camera.position.x-2, camera.position.y, camera.position.z))
     light.position.copy(camera.position)
 
     controls.update()
   }
 
+  // outdated func
+  // function genPlane() {
+  //   cardMesh.geometry.dispose()
+  //   cardMesh.geometry = RectangleRounded(
+  //     world.plane.width * world.plane.size,
+  //     world.plane.height * world.plane.size,
+  //     .05,
+  //     5,
+  //     // 10
+  //   )
+  // }
 
-  function genPlane() {
-    cardMesh.geometry.dispose()
-    cardMesh.geometry = RectangleRounded(
-      world.plane.width * world.plane.size,
-      world.plane.height * world.plane.size,
-      .05,
-      5,
-      // 10
-    )
-  }
-
+  // generate rounded plane
   function RectangleRounded(w: number, h: number, r: number, s: number) {
     const pi2 = Math.PI * 2
     const n = (s + 1) * 4 // number of segments
@@ -195,6 +173,7 @@
     }
   }
 
+  // on size window
   function onResize () {
     windowSize.value = { x: window.innerWidth, y: window.innerHeight }
     camera.aspect = window.innerWidth / window.innerHeight
@@ -202,6 +181,7 @@
     renderer.setSize(innerWidth - marginX, innerHeight - marginY)
   }
 
+  // mount start
   onMounted(() => {
     target.value.appendChild(renderer.domElement)
 
