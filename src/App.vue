@@ -3,13 +3,13 @@
     <router-view name="Header"></router-view>
     <v-main>
       <v-row id="content" class="ma-0 d-flex align-center justify-center settings">
-        <v-col cols="12" sm="8" md="8" lg="6" xl="4">
+        <!-- <v-col cols="12" sm="8" md="8" lg="6" xl="4"> -->
           <router-view v-slot="{ Component }">
             <v-slide-y-transition leave-absolute>
               <component :is="Component" />
             </v-slide-y-transition>
           </router-view>
-        </v-col>
+        <!-- </v-col> -->
       </v-row>
     </v-main>
   </v-app>
