@@ -22,9 +22,10 @@
 
 <script lang="ts" setup>
   import { ref, onMounted } from 'vue'
+  // @ts-expect-error
   import * as THREE from 'three'
+  // @ts-expect-error
   import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-  // import * as dat from 'dat.gui'
 
   import cat1 from '@/assets/cat.png'
   import cardback from '@/assets/cardback.png'
